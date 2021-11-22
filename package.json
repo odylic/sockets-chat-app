@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js",
+    "build": "webpack --watch",
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
+    "@material-ui/core": "^4.12.3",
     "babel-loader": "^8.2.3",
     "babel-polyfill": "^6.26.0",
     "css-loader": "^6.5.1",
@@ -34,6 +37,7 @@
     "react-router-dom": "^6.0.2",
     "sass-loader": "^12.3.0",
     "socket.io": "^4.4.0",
+    "socket.io-client": "^4.4.0",
     "socketio": "^1.0.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.64.2",
