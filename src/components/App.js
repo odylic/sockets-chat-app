@@ -1,6 +1,6 @@
+import { TextField } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
-import { TextField } from "@material-ui/core";
 import "../App.scss";
 
 const socket = io.connect("http://localhost:4000");
@@ -15,7 +15,7 @@ function App() {
     })
   })
 
-`
+
   const onTextChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
